@@ -222,8 +222,8 @@ body {
 
 /* about section */
 .about_section {
-  max-width: 1240px;
-  margin: 100px auto;
+  /* max-width: 1240px; */
+  margin: 100px;
   display: grid;
   grid-template-columns: 4fr 8fr;
   gap: 60px;
@@ -269,14 +269,14 @@ body {
 
 .experience_image {
   border-radius: 30px;
-  width: 617px;
-  height: 436px;
+  width: 580px;
+  height: 400px;
 }
 
 .experience_cards {
   position: absolute;
-  top: 12%;
-  right: 0;
+  top: 45px;
+  right: -60px;
   background-color: #ffffff;
   border-radius: 30px;
   width: 351px;
@@ -291,8 +291,6 @@ body {
   display: flex;
   align-items: start;
   gap: 20px;
-
-
 }
 
 .card p {
@@ -308,7 +306,6 @@ body {
   margin: 100px 0;
   padding: 100px 0;
   background-color: #ffffff;
-
 }
 
 .service_top {
@@ -334,11 +331,11 @@ body {
 
 .services {
   display: flex;
-  width: 1240px;
   gap: 30px;
   margin: 50px 100px 0;
   overflow-x: scroll;
 }
+
 .services::-webkit-scrollbar{
   color: transparent;
 }
