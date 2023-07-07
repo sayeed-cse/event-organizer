@@ -365,3 +365,33 @@ body {
 .service_description {}
 
 /* services End */
+/* planning section start */
+.planning_section{
+  margin: 100px;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-row: auto;
+  gap: 60px;
+}
+.plannig_box_one{
+  grid-column: 1 /span 3;
+
+  
+}
+.plannig_box_two{
+  grid-column: 4/ span 9;
+}
+.plannig_box_three{
+  grid-column: 1/span 3;
+}
+.plannig_box_four{
+  grid-column: 4/span 3;
+}
+.plannig_box_five{
+  grid-column: 10/ span 3;
+}
+.plannig_box_two p{
+  font-size: 17px;
+  line-height: 26px;
+}
+/* planning section End */
