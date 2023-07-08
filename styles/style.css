@@ -6,10 +6,12 @@
 }
 
 :root {
+  --primary:#27187E;
   --skyblue: #758BFD;
   --light-skyblue: #AEB8FE;
   --off-white: #ffffffbf;
   --dark1: #2D2D2D;
+  --muted:#6E6E6E;
 }
 
 body {
@@ -31,8 +33,17 @@ body {
 
 .text-md {
   font-size: 17px;
+  line-height: 26px;
 }
-
+.text_headline{
+  font-family: Work Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0.84px;
+text-transform: uppercase;
+}
 .headingOne {
   font-size: 60px;
   font-weight: 600;
@@ -370,28 +381,90 @@ body {
   margin: 100px;
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-row: auto;
   gap: 60px;
 }
 .plannig_box_one{
-  grid-column: 1 /span 3;
-
+  grid-column: 1 /span 4;
+grid-row: 1;
   
 }
+
 .plannig_box_two{
-  grid-column: 4/ span 9;
+  grid-column: 5/ span 8;
+  grid-row: 1;
 }
 .plannig_box_three{
-  grid-column: 1/span 3;
+  grid-column: 1/span 4;
+  grid-row: 2;
+  padding-right: 20px;
 }
 .plannig_box_four{
-  grid-column: 4/span 3;
+  grid-column: 5/span 4;
+  grid-row: 2;
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 30px;
+
 }
 .plannig_box_five{
-  grid-column: 10/ span 3;
+  grid-column: 9/ span 4;
+  grid-row: 2;
+
 }
-.plannig_box_two p{
+.plannig_box_one img{
+  width: 100%;
+  
+}
+.plannig_box_two>.text_headline{
+  color: var(--primary);
+}
+.plannig_box_two>.headingTwo{
+  color: var(--dark1);
+}
+.plannig_box_three p,.plannig_box_four ul li{
   font-size: 17px;
   line-height: 26px;
 }
+.plannig_box_four>.headingFour{
+  font-style: italic;
+  color: #2D2D2D;
+}
+.plannig_box_four ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+.plannig_box_four i{
+  margin-right: 10px;
+  color: var(--primary);
+}
+.plannig_box_five img{
+  width: 100%;
+}
 /* planning section End */
+/* why choose us start */
+.why_us_section{
+  padding:100px;
+  background-color: #ffffff;
+}
+.why_us_top{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 60px;
+  margin-bottom:55px;
+}
+.why_us_top .right p{
+  color: var(--muted);
+}
+.why_us_top .text_headline{
+  color: var(--primary);
+}
+.why_us_middle{
+  position: relative;
+}
+.why_us_middle img{
+  width: 75%;
+}
+/* why choose us End */
